@@ -5,15 +5,18 @@
 .header{
     background-color: rgb(133 131 128);
     height: 30px;
-    
-    
+    gap: 2rem;
+    display: flex;
+
 }
 .btn{
-    display: contents;    
+    display: contents; 
+    font-size: 17px;
+    padding: 35px;
+    padding-top: 19px;   
+    
 }
-.btn2{
-    display: contents;
-}
+
 .image{
 
    width: 100%;

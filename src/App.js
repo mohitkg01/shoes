@@ -1,15 +1,25 @@
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
-import Header from "./Components/Header";
-import Home from "./Components/Home";
-import AdminPage from "./Components/AdminPage";
+import Header from "./Components/Header/Header";
+import './App.css';
+import Shop from "./Components/Header/Shop/Shop";
+import About from "./Components/Header/About/About";
+import Contact from "./Components/Header/Contact/Contact";
+import Home from "./Components/Home/Home";
+// import Cart from "./Components/Cart/Cart";
+import Cartpage from "./Components/Cart/Cartpage";
+
+
 function App() {
   return (
    <Router> 
-     <h1>Shoes Store</h1>
     <Header/>
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/admin" element={<AdminPage/>}/>
+      
+      <Route  path="/home"element={<Home/>}/>
+      <Route path="/shop" Component={Shop}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/cart" element={<Cartpage/>} />
     </Routes>
    </Router>
   );

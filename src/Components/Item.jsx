@@ -1,8 +1,8 @@
 import React,{useContext, useState} from 'react'
-import Card from './Card'
-import './Item.css'
-import ItemForm from './ItemForm'
-import CartContext from './CartContext'
+// import Card from './Card/Card'
+// import './Item.css'
+// import ItemForm from './ItemForm'
+// import CartContext from './CartContext'
 const Item = (props) => {
   
   const cartCtx=useContext(CartContext);

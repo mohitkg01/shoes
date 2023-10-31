@@ -1,7 +1,7 @@
 import React from 'react'
 import './Item.css'
 import { useRef } from 'react';
-import Input from './Input';
+// import Input from './Input';
 
 const ItemForm = (props) => {
     const amountInputRef=useRef();

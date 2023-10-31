@@ -1,0 +1,39 @@
+.main{
+    background-color: rgb(168, 176, 173);
+    display: flex;
+    height: 10vh;
+    padding-top: 16px;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 26px;
+    
+}
+.name{
+    flex:1;
+    margin-top: 9px;
+    margin-left: 2rem;
+}
+.header{
+    flex: 1 1;
+    margin-top: 9px;
+    margin-left: 2rem;
+    padding-top: 3px;
+    padding-left: 15rem;
+}
+
+.header>:nth-child(1){
+    color: black;
+    text-decoration:none ;
+    margin: 2rem;
+    text-align: center;
+}
+.header>:nth-child(2){
+    color: black;
+    text-decoration:none ;
+    margin: 2rem;
+}
+.header>:nth-child(3){
+    color: black;
+    text-decoration:none ;
+    margin: 2rem;
+}

@@ -1,0 +1,43 @@
+.row{
+    display: flex;
+    
+}
+.about{
+    width: 100%;
+    
+}
+.aboutus{
+   
+
+    margin-left: 10rem;
+    
+}
+p{
+    margin-bottom: 1rem;
+    margin-top: 0px;
+    font-size: 24px;
+}
+.aboutus>:nth-child(1){
+   text-align: center;
+   font-size: 2.5rem;
+}
+
+.button{
+    width: 50%;
+    color: white;
+    padding-left: 24rem;
+    margin-top: 5rem;
+    transform: scale(2.5);
+}
+.button> button{
+    background-color: #ff9b00e3;
+    border-radius: 5px;
+    border-style: none;
+    font-size: larger;
+}
+.images{
+    width: 65%;
+    height: 80vh;
+    margin-left: 5rem;
+
+}
