@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './Header.css'
 import Cart from '../Cart/Cart'
+
+
 const Header = () => {
   return (
     <div className="main">
@@ -15,6 +17,7 @@ const Header = () => {
       </div>
       <div className="cart">
       <Link to='cart'><Cart/></Link> 
+    
       </div>
     </div>
   )

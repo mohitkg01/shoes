@@ -1,0 +1,133 @@
+.cartpage{
+  background-color: #d8d2d2;
+  width: 50%;
+  margin-left: 45rem;
+  position: relative;
+  /* border-radius: 6px; */
+  top: -122px;
+  left: 40px;
+  height: 100vh;
+}
+.cartpage>h3{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.btn-more{
+    /* position: absolute; */
+    bottom: 0px;
+    left: 0px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    color: #f80e1d;
+    border-style: none;
+    background: #d8d2d2;
+    transform: scale(1.5);
+    padding-right: 0;
+}
+
+.row{
+    display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px; 
+  border-bottom: 1px solid #ccc;
+}
+.row-item{
+    flex: 1; 
+    /* text-align: center; */
+
+}
+.row-item.img {
+  /* Adjust width and margin to control the image's position on the left */
+  width: 20%;
+  margin-right: 10px;
+}
+.img>figure>img{
+  transform: scale(2.25);
+  max-width: 100%;
+  height: auto;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .price {
+    color: #FF5733;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin-top: -12px;
+  }
+  .subtotal{
+    display: flex;
+    align-items: center;
+  }
+  .subtotal>span{
+    background: #f3e8e8;
+    margin-left: 8px;
+    margin-bottom: 18px;
+    width: 40px;
+    padding: 5px;
+    border-style: outset;
+    border-radius: 8px;
+  }
+  .decrease,
+  .increase {
+    margin: 5px;
+  }
+  
+  .remove {
+    align-self: flex-end;
+    cursor: pointer;
+    padding-bottom: 20px;
+    color: red;
+  }
+p{margin-bottom: 1rem;
+    margin-top: 0px;
+    font-size: 14px;}
+
+ /* .cart-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        width: 100%; } */
+
+.btn-more {
+        flex: 1; 
+        text-align: left;
+      }
+.btnc {
+        text-align: right;
+        margin-top: -44px;
+      }
+      
+.btnc>button {
+    background: #665af0;
+    color: white;
+    padding: 9px;
+    margin-right: 22px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+}
+.btn-more>:nth-child(1){
+  cursor: pointer;
+    background: #665af0;
+    color: white;
+    padding: 9px;
+    margin-left: 22px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 50px;
+}

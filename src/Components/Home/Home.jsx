@@ -4,13 +4,13 @@ import './Home.css'
 import {FcShipped} from 'react-icons/fc'
 import {IoMdCash} from 'react-icons/io'
 import {MdSupportAgent} from 'react-icons/md'
-// import Data from '../Data';
+
 const Home = () => {
 
   return (
     <div>
-      <img  className='image'src={img} alt="headerImage" />\
-      {/* <div>{<Data/>}</div> */}
+      <img  className='image'src={img} alt="headerImage" />
+
       <div className="icons">
         <div className="icon">
         <span><FcShipped/></span>

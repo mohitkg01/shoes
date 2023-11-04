@@ -5,7 +5,6 @@ import Shop from "./Components/Header/Shop/Shop";
 import About from "./Components/Header/About/About";
 import Contact from "./Components/Header/Contact/Contact";
 import Home from "./Components/Home/Home";
-// import Cart from "./Components/Cart/Cart";
 import Cartpage from "./Components/Cart/Cartpage";
 
 
