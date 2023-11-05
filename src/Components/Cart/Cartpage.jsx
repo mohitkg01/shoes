@@ -11,11 +11,13 @@ const Cartpage = () => {
   const {cart,total_price}=useCartContext();
   const {isCartOpen,setIsCartOpen}=useCartContext();
 
+  
+
   const onCloseCart=(()=>{
     setIsCartOpen(false);
   })
   if (!isCartOpen) {
-    return null; 
+    return null; // If the cart is not open, don't render anything
   }
   if(isCartOpen && cart.length===0){
     return (
@@ -29,22 +31,20 @@ const Cartpage = () => {
       </div>
     )
   }
+  
   return (
-    <div className="cartpage">
-      <button  className='close' onClick={onCloseCart}><AiOutlineClose/>
-      </button>
+    <div className="cartpage"> 
+      <div>
+          <Link to="/shop">
+          <button  className='close' onClick={onCloseCart}><AiOutlineClose/></button>
+          </Link>
       <h3>Your Cart Item</h3>
+      </div>
         <hr/>
         <div className="cart-item">
             {cart.map((curElem)=>{
                 return <CartItem key={curElem.id} {...curElem}/>
             })}
-        </div>
-        <div className="total-order">
-          <div className="order-amount">
-            <p>Total Amount</p>
-            <p>{total_price}</p>
-          </div>
         </div>
         <div className="cart-buttons">
           <Link to='/shop' className="btn-more">
@@ -53,7 +53,13 @@ const Cartpage = () => {
           <div className='btnc'>
             <button>Purchase Now</button></div>
         </div>
+        <div className="total-order">
+          <div className="order-amount">
+            <p>Total Amount</p>
+            <p>{total_price}</p>
+          </div>
         </div>
+    </div>
   )
 }
 

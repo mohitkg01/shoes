@@ -10,10 +10,9 @@ import Cartpage from "./Components/Cart/Cartpage";
 
 function App() {
   return (
-   <Router> 
+   <Router > 
     <Header/>
     <Routes>
-      
       <Route  path="/home"element={<Home/>}/>
       <Route path="/shop" Component={Shop}/>
       <Route path="/about" element={<About/>}/>

@@ -2,24 +2,25 @@ import React, { useState } from 'react';
 import {FaMinus,FaPlus,FaTrash} from "react-icons/fa";
 import { useCartContext } from '../Context/cartContext';
 
-const CartItem = ({id,price,title,image}) => {
+const CartItem = ({id,price,title,image,quant}) => {
 
  const {removeItem}=useCartContext();
- const {total_item}=useCartContext();
-
-
+  
   // increment and decrement of quantity
-const [quantity,setQuantity]=useState(1);
-    const setDecrease=()=>{
-        if(quantity>1){
-       setQuantity(quantity-1);
-      }
-    }
-    const setIncrease=()=>{
-        setQuantity(quantity+1);
-    }
+  const [quantity,setQuantity]=useState(quant);
 
-  return (
+
+  const setDecrease=()=>{
+      if(quantity>1){
+     setQuantity(quantity-1);
+    }
+  }
+  const setIncrease=()=>{
+      setQuantity(quantity+1);
+    
+  }
+
+  return ( 
       <div className="row">
       <div className="row-item img">
         <figure><img src={image} alt="" /></figure>

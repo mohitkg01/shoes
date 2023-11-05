@@ -9,7 +9,7 @@ const Shop = () => {
     const {addToCart}=useCartContext();
   return (
     <div className='shop' id='shop'>
-        <div>
+        <div className='itemm'>
          {
             product.product.items.map((item)=>
             <div  key={item.id} className='items'>

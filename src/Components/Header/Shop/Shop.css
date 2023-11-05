@@ -1,50 +1,47 @@
-.shop:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
 .items {
-    float: left;
-  width: 33.33%;
-  height: 360px; 
-  padding-left: 222px;
-}
+    width: 30%; 
+    margin: 10px; 
+    display: inline-block;
+    text-align: center;
+  }
 .items img {
     width: 63%;
     background-color: rgb(244, 244, 244);
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
+    margin-top: 12px;
+    margin-right: -75px;
 }
 .items>:nth-child(2){
-    margin-bottom: -7px;
-    margin-top: 1rem;
+    margin-bottom: 0px;
     padding-left: 57px;
     background-color: rgb(244, 244, 244);
-    width: 50%;
+    width: 65%;
     border-radius: 4px;
     font-weight: bold;
     font-size: larger;
+    margin-top: 4px;
+    margin-left: 89px;
 }
 .items>:nth-child(3){
-    margin-bottom: 13px;
-    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-size: 24px;
-    padding-left: 80px;
+    padding-left: 116px;
 
 }
 .items>:nth-child(4){
-    padding-left: 60px;
-    margin-top: -6px;
+    padding-left: 90px;
+    margin-top: 10px;
 }
 .btn{
     padding: 11px;
     border-style: hidden;
     border-radius: 5px;
     background-color: #efab52bf;
-    margin-left: 60px;
-    margin-top: 12px;
-    
+    margin-left: 90px;
+    margin-top: 8px;
+    cursor: pointer;
 }
 
 
