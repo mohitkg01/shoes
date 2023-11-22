@@ -1,0 +1,14 @@
+.footer{
+    height: 18vh;
+    background: #d8d6d363;
+}
+.footerl{
+    margin-left: 10px;
+}
+.footerr{
+    margin-left: 10px;
+}
+.footerr>Link{
+    padding: 20px;
+    color: black;
+}

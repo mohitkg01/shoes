@@ -6,6 +6,7 @@ import About from "./Components/Header/About/About";
 import Contact from "./Components/Header/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Cartpage from "./Components/Cart/Cartpage";
+import Footer from "./Components/Footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/cart" element={<Cartpage/>} />
     </Routes>
+    <Footer/>
    </Router>
   );
 }
