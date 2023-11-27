@@ -8,15 +8,18 @@
 }
 .name{
     flex:1;
-    
     margin-left: 2rem;
     transform: rotate(-10deg);
+    
 }
 .name>:nth-child(1){
     text-decoration: none;
     color: #641717;
     font: icon;
     font-size: 20px;
+    font-weight: bold;
+    font-weight: 900;
+    text-decoration: underline;
 }
 .header{
     flex: 1 1;
