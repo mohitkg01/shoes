@@ -1,14 +1,30 @@
-.footer{
-    height: 18vh;
-    background: #d8d6d363;
-}
-.footerl{
-    margin-left: 10px;
-}
-.footerr{
-    margin-left: 10px;
-}
-.footerr>Link{
+.footer {
+  margin-top: 50px;
+    background-color:#b5b7b9;
     padding: 20px;
-    color: black;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+  }
+  
+  .footerl p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  
+  .footerr {
+    display: flex;
+  }
+  
+  .footerr a {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footerr a:hover {
+    color: #007bff;
+  }
+  

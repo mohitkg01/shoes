@@ -1,4 +1,4 @@
-.contact{
+/* .contact{
     display: flex;
     height: 100%;
 }
@@ -111,4 +111,79 @@ label{
 .send>button{
     font-size: 25px;
     border-radius: 6px;
-}
+} */
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  
+   .text {
+    flex: 0.4;
+    padding: 20px;
+  }
+  
+  .text span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .icon-c {
+    display: flex;
+  }
+  
+  .icon-c a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  .icon-c a:hover {
+    color: #007bff;
+  }
+  
+  .form {
+    flex: 0.5;
+  }
+  
+  .names,
+  .email,
+  .phone,
+  .comment {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .send button {
+    background-color: #9ec6f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .send button:hover {
+    background-color: #0056b3;
+  }
+   

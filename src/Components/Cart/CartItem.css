@@ -1,0 +1,56 @@
+ .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #e9e1e1ef;
+  background: ghostwhite;
+  border-radius: 12px;
+  }
+  
+  .img {
+    display: grid;
+    align-items: center;
+    margin: 30px;
+  }
+  
+  .img img {
+    width: 150px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  .img p{
+    margin-top: 10px;
+  }
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+  }
+  
+  .quantity button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .quantity div {
+    margin: 0 10px;
+    color: ff0000;
+  }
+  
+  .remove {
+    text-align: center;
+  }
+  
+  .icon {
+    color: rgb(225, 52, 52);
+    cursor: pointer;
+  }
+  
+  .subtotal {
+    text-align: right;
+ 
+  margin-right: 25px;
+  }
+  

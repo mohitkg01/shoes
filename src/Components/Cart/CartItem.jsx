@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {FaMinus,FaPlus,FaTrash} from "react-icons/fa";
 import { useCartContext } from '../Context/cartContext';
+import './CartItem.css'
 
 const CartItem = ({id,price,title,image,quant}) => {
 
@@ -23,27 +24,19 @@ const CartItem = ({id,price,title,image,quant}) => {
   return ( 
       <div className="row">
       <div className="row-item img">
-        <figure><img src={image} alt="" /></figure>
-       </div>
-      <div className="row-item title">
-      <p>{title}</p>
-      </div>
-        <div className="row-item price">
-          <p>Rs{price}</p></div>
-        <div className="row-item quantity">
-          <div className="decrease">
+        <img src={image} alt="" />
+        <p>{title}</p>
+        <p>Rs{price}</p>
+        </div>
+      <div className="row-item quantity">
             <button onClick={setDecrease}>
                 <FaMinus/>
             </button>
-        </div>
         <div>{quantity}</div>
-        <div className="increase">
             <button onClick={setIncrease}>
                 <FaPlus/>
             </button>
-        </div>
-
-        </div>
+      </div>
         <div className="row-item subtotal">
           <p>Rs</p>
           <span>{price * quantity}</span>

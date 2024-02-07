@@ -1,26 +1,24 @@
-.cart {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding-bottom: 15px;
-  }
-  .cart-icon {
+ .cart {
     position: relative;
-    display: inline-block;
-    margin-right: 10px;
+    cursor: pointer;
+    margin-right: 40px;
   }
+  
+  .cart:hover {
+    color: #d41a1a;
+  }
+  
   .cart-total-item {
     position: absolute;
-    top: 8px;
-    right: -15px;
+    top: 5px;
+    right: 20px;
+    background-color: #e7dedc;
+    color: #d41a1a;
+    padding: 5px 10px;
     border-radius: 50%;
-    padding: 4px 8px;
-    font-size: 18px;
-    cursor: pointer;
+    font-size: 0.8em;
+    margin-right: -45px;
+    margin-top: -10px;
   }
-  
-  
-  
-  
   
   

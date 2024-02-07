@@ -55,8 +55,8 @@ const Cartpage = () => {
         </div>
         <div className="total-order">
           <div className="order-amount">
-            <p>Total Amount</p>
-            <p>{total_price}</p>
+            <p>Total Amount : </p>
+            <p>Rs {total_price}</p>
           </div>
         </div>
     </div>

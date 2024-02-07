@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css';
 import aboutimage from '../../../Assets/aboutus.avif'
-
+import {Link} from 'react-router-dom'
 
 const About = () => {
   
@@ -18,9 +18,9 @@ const About = () => {
               Our commitment to ethical business practices reflects our dedication to making a positive impact beyond the world of shoes.
               </p><p>Thank you for choosing ShoesStore as your go-to destination for quality footwear. We look forward to being part of your journey, one step at a time.</p>
       </div>
-      <div className="button">
-        <button>Shop Now</button>
-      </div>
+      <Link className="button" to="/shop">
+        <button >Shop Now</button>
+      </Link>
       </div>
       <div className="images">
        <img src={aboutimage} alt="" />

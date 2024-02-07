@@ -1,6 +1,5 @@
 import React from 'react'
 import product from './Data';
-import { NavLink } from "react-router-dom";
 
 import './Shop.css';
 import { useCartContext } from '../../Context/cartContext';
@@ -19,14 +18,10 @@ const Shop = () => {
                 <div>
                     <span>{item.rating}</span>{Array.from({length:item.rating},(_,index)=><span key={index}>⭐️</span>)}
                 </div>
-                <NavLink  onClick={()=>addToCart(item.id,item.price,item.title,item)}>
-                <button  className='btn'>ADD TO CART</button>
-                </NavLink>                
+                <button  onClick={()=>addToCart(item.id,item.price,item.title,item)} className='btn'>ADD TO CART</button>              
             </div>)
-           
           }
           </div>
-          
     </div>
   )
 }
