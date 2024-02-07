@@ -12,9 +12,12 @@
  .icon {
    text-align: center;
  }
- 
+ .icon>:nth-child(1){
+  color: rgb(51, 251, 16);
+ }
  .icon span {
    display: block;
+   
  }
  
  .icon span:first-child {
@@ -31,4 +34,13 @@
    font-size: 0.9em;
    color: #777;
  }
- 
+ @media only screen and (max-width: 768px) {
+  .icons {
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .icon {
+     margin-bottom: 20px;
+  }
+}
