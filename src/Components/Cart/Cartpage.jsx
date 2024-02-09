@@ -23,10 +23,10 @@ const Cartpage = () => {
     return (
       <div className="cartpage">
         <h3>Cart is empty</h3>
+        <button className='close' onClick={onCloseCart}><AiOutlineClose/></button>
         <hr />
-        <Link to='/shop' className="btn-more">
+        <Link to='/shop' className="btn-mor">
             <button>More Product</button>
-            <button className='close' onClick={onCloseCart}><AiOutlineClose/></button>
           </Link>
       </div>
     )
@@ -34,12 +34,10 @@ const Cartpage = () => {
   
   return (
     <div className="cartpage"> 
-      <div>
+      <h3>Your Cart Item</h3>
           <Link to="/shop">
           <button  className='close' onClick={onCloseCart}><AiOutlineClose/></button>
           </Link>
-      <h3>Your Cart Item</h3>
-      </div>
         <hr/>
         <div className="cart-item">
             {cart.map((curElem)=>{
@@ -56,7 +54,7 @@ const Cartpage = () => {
         <div className="total-order">
           <div className="order-amount">
             <p>Total Amount : </p>
-            <p>Rs {total_price}</p>
+            <p>Rs { total_price}</p>
           </div>
         </div>
     </div>

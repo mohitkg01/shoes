@@ -1,95 +1,88 @@
 .cartpage {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 57px;
 }
-
-.cartpage h3 {
-  margin-bottom: 20px;
-    margin-top: -15pc;
-    font-size: 40px;
+.cartpage h3{
+  text-align: center;
+  font-size: 40px;
 }
-
-.cartpage hr {
-  width: 100%;
-  margin-bottom: 20px;
+.cartpage hr{
+  max-width: 88%;
 }
-
-.cart-item {
-  max-height: 300px;
-  overflow-y: auto;
-  margin-bottom: 20px;
+.close{
+    /* float: right; */
+    background: none;
+    border-style: none;
+    font-size: 28px;
 }
-
+.close:hover{
+  cursor: pointer;
+}
 .cart-buttons {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin-top: 20px;
+}
+
+.btn-mor button{
+  padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* margin-left: 30pc; */
+    margin: 10px;
+    /* margin-bottom: 10pc; */
 }
 
 .cart-buttons button {
   padding: 10px 20px;
-  cursor: pointer;
-  background-color: #73aae4;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
 }
 
 .cart-buttons button:hover {
   background-color: #0056b3;
 }
 
+.btnc {
+  text-align: right;
+}
+
 .total-order {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  margin-top: 20px;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
 }
 
 .order-amount {
   display: flex;
-}
-.order-amount p {
-  margin-right: 15px;
-}
-.order-amount>:nth-child(2){
-  background-color: #fdf5f5cc;
-  padding: 15px;
-  border-radius: 5px;
-  margin-top: -10px;
-}
-.btnc {
-  margin-left: 20px;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #000;
-  font-size: 30px;
-}
 
-.close:hover {
-  color: #ff0000;
-}
-.btn-more>:nth-child(1){
-  background-color: #73aae4;
-  height: 40px;
-  border-style: hidden;
-  border-radius: 5px;
-  margin-top: 100px;
-}
-.btn-more>:nth-child(1):hover{
-  background-color:#0056b3
+@media screen and (max-width: 768px) {
+  .cartpage h3 {
+    font-size: 30px;
+  }
+
+  .btn-mor button,
+  .cart-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }

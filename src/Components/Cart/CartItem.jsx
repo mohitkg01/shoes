@@ -22,13 +22,15 @@ const CartItem = ({id,price,title,image,quant}) => {
   }
 
   return ( 
-      <div className="row">
-      <div className="row-item img">
+      <div className="rowc">
+      <div className="img">
         <img src={image} alt="" />
         <p>{title}</p>
         <p>Rs{price}</p>
         </div>
-      <div className="row-item quantity">
+
+      <div className='row-item '>
+      <div className="quantity">
             <button onClick={setDecrease}>
                 <FaMinus/>
             </button>
@@ -37,12 +39,13 @@ const CartItem = ({id,price,title,image,quant}) => {
                 <FaPlus/>
             </button>
       </div>
-        <div className="row-item subtotal">
+        <div className="subtotal">
           <p>Rs</p>
           <span>{price * quantity}</span>
         </div>
-        <div className="row-item remove">
-          <FaTrash className="icon" onClick={()=>removeItem(id)}/>
+        <div className="remove">
+          <FaTrash className="icond" onClick={()=>removeItem(id)}/>
+        </div>
         </div>
     </div>
   )
