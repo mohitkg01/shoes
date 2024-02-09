@@ -4,6 +4,8 @@
   margin: 0 auto;
   padding: 20px;
   margin-top: 57px;
+  width: 100%;
+  
 }
 .cartpage h3{
   text-align: center;
@@ -17,6 +19,7 @@
     background: none;
     border-style: none;
     font-size: 28px;
+    margin-right: 10px;
 }
 .close:hover{
   cursor: pointer;

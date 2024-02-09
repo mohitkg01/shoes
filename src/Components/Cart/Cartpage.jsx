@@ -16,7 +16,7 @@ const Cartpage = () => {
     setIsCartOpen(false);
   })
   if (!isCartOpen) {
-    return null; // If the cart is not open, don't render anything
+    return null;
   }
   if(isCartOpen && cart.length===0){
     return (
