@@ -1,9 +1,4 @@
 .main {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: burlywood; */
   position: fixed;
   top: 0;
   left: 0;
@@ -44,4 +39,19 @@
   font-size: 24px;
   vertical-align: middle;
   margin-left: 20px;
+}
+@media only screen and (max-width: 768px) {  
+  .name a {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+.header{
+  justify-content: space-around;
+  font-size: 15px; 
+}
+  
+
+  .cart-link .cart-icon {
+    margin-left: 0; 
+  }
 }

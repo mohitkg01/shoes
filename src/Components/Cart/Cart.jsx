@@ -1,7 +1,7 @@
 import React from 'react'
 import {AiOutlineShoppingCart} from 'react-icons/ai';
 import {useCartContext} from '../Context/cartContext';
-
+import './Cart.css';
 
 const Cart = () => { 
   const {total_item}=useCartContext();

@@ -1,7 +1,8 @@
  .cart {
     position: relative;
     cursor: pointer;
-    margin-right: 40px;
+    margin-right: 100px;
+    /* width: 100%; */
   }
   
   .cart:hover {
@@ -20,15 +21,3 @@
     margin-right: -45px;
     margin-top: -10px;
   }
-  
-  /* @media only screen and (max-width: 768px) {
-    .cart {
-      margin-right: 20px; 
-    }
-  
-    .cart-total-item {
-      font-size: 0.7em; 
-      padding: 4px 8px;
-      right: 10px; 
-    }
-  } */

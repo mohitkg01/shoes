@@ -1,7 +1,6 @@
 import React from 'react'
 import CartItem from './CartItem'
 import { useCartContext } from '../Context/cartContext';
-import './Cart.css';
 import './Cartpage.css'
 import { Link } from 'react-router-dom';
 import {AiOutlineClose} from 'react-icons/ai';
